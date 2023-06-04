@@ -117,7 +117,7 @@ RegisterNumber:  212222230056
 ```
 #### SR FLIP-FLOP
 ```
-module sr(s,r,clk,q,qbar);
+module sr(S,R,clk,q,qbar);
 input S,R,clk;
 output reg q;
 output reg qbar;
