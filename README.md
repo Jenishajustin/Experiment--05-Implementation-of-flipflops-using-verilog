@@ -130,15 +130,17 @@ endmodule
 ```
 #### JK FLIP-FLOP
 ```
-module jk(j,k,clk,q,qbar);
-input j,k,clk;
-output reg q;
-output reg qbar;
+module jkflip(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
 always @(posedge clk)
 begin
-q=(j&(~q))|((~k)&q);
-qbar=((~j)&q)|(k &(~q));
-end 
+    Q=(J&(~Q))|((~K)&Q);
+    Qbar=~Q;
+end
 endmodule
 ```
 #### T FLIP-FLOP
@@ -177,7 +179,7 @@ endmodule
 ![srrtl](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/a4d02211-10ed-4ed9-babf-023d22b16f9d)
 
 #### JK FLIP-FLOP
-![jkrtl](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/ce8b1e8e-f3b5-4f03-9571-62491f20d5ad)
+![image](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/e12e7b10-8ae7-46f4-bea1-c039a66afcc1)
 
 #### T FLIP-FLOP
 ![trtl](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/6ddbe51f-0d8c-4f67-88bb-143c75cdb5de)
@@ -190,7 +192,7 @@ endmodule
 ![srtime](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/3b89af9c-bf1b-4a69-b8f4-d2015df5a0b9)
 
 #### JK FLIP-FLOP
-![jktime](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/0e058428-8ae5-48a8-8733-4264d79f4a21)
+
 
 #### T FLIP-FLOP
 ![ttime](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/ce947d2d-dc55-4399-8fa1-8d19b0a6e7f8)
