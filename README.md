@@ -192,6 +192,7 @@ endmodule
 ![srtime](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/3b89af9c-bf1b-4a69-b8f4-d2015df5a0b9)
 
 #### JK FLIP-FLOP
+![image](https://github.com/Jenishajustin/Experiment--05-Implementation-of-flipflops-using-verilog/assets/119405070/1eece620-50c3-4ac5-b65c-4fa661e02515)
 
 
 #### T FLIP-FLOP
